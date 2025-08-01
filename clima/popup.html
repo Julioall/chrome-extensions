@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="weather-container">
+    <h2 class="title">Clima</h2>
+
+    <!-- 🔎 Campo de busca -->
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Digite a cidade..." />
+      <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Resultado -->
+    <div class="main-weather">
+      <img id="weather-icon" src="" alt="Clima">
+      <div class="temperature" id="temperature"></div>
+    </div>
+
+    <div class="description" id="description"></div>
+
+    <div class="details">
+      <div>
+        <i class="fas fa-city"></i>
+        Cidade:
+        <span id="city-name"></span>
+      </div>
+      <div>
+        <i class="fas fa-temperature-low"></i>
+        Sensação:
+        <span id="feels-like"></span>
+      </div>
+      <div>
+        <i class="fas fa-tint"></i>
+        Umidade:
+        <span id="humidity"></span>
+      </div>
+      <div>
+        <i class="fas fa-wind"></i>
+        Vento:
+        <span id="wind"></span>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

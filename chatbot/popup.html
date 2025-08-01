@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lia Chatbot</title>
+  <link rel="stylesheet" href="popup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="ios-container">
+    <!-- Cabeçalho com abas -->
+    <div class="ios-header">
+      <button id="chat-tab" class="ios-tab active"><i class="fas fa-comments"></i></button>
+      <button id="settings-tab" class="ios-tab"><i class="fas fa-cog"></i></button>
+    </div>
+
+    <!-- Seção Chat -->
+    <div id="chat-section" class="ios-section active">
+      <div id="chat-output" class="ios-chat-output"></div>
+      <div id="typing-indicator" class="ios-typing-indicator" style="display: none;">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="ios-input-container">
+        <textarea id="user-input" placeholder="Mensagem..." rows="1"></textarea>
+        <button id="send-btn">➤</button>
+      </div>
+    </div>
+
+    <!-- Seção Configurações -->
+    <div id="settings-section" class="ios-section">
+      <h3>⚙️ Configurações</h3>
+      <label for="api-key">API Key:</label>
+      <input type="password" id="api-key" placeholder="Digite sua chave API" />
+      <label for="contexto">Contexto:</label>
+      <textarea id="contexto" rows="6" placeholder="Digite o contexto do chatbot"></textarea>
+      <button id="save-settings">Salvar</button>
+      <p id="status"></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
